@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  align-items: center;
+  background-color: gainsboro;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  justify-content: flex-start;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  padding-top: 10%;
+}
+
+.box {
+  width: 35%;
+  min-width: 160px;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-box {
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 0 15px;
+  position: relative;
+  overflow: hidden;
+  position: relative;
+  transition: all .3s ease;
+}
+
+.question-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .answer {
+  transition: all .3s ease;
+} */
+
+.icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  top: 20px;
+  right: 15px;
+
+}
+
+.icon:hover {
+  cursor: pointer;
+}
+
+.text-box.active {
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1)
+}
+
+.text-box.active::before,
+.text-box.active::after {
+  content: "\f075";
+  font-family: "Font Awesome\ 5 Free";
+  color: #2ecc71;
+  font-size: 6rem;
+  position: absolute;
+  opacity: 0.2;
+  top: 15px;
+  left: 20px;
+  z-index: 0;
+}
+
+.text-box.active::before {
+  color: #3498db;
+  font-size: 5rem;
+  top: -10px;
+  left: -20px;
+  transform: scaleX(-1);
+}
+
+
+
+.fas {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-times {
+  background-color: gainsboro;
+  color: #fff;
+  ;
+}
+
+.hidden {
+  display: none;
+}

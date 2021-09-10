@@ -1,0 +1,19 @@
+.box {
+  /* display: none; */
+  width: 100px;
+  text-align: center;
+}
+
+.box p {
+  color: dimgray;
+  font-size: .6rem;
+  margin: 5px;
+}
+
+.key-box {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}

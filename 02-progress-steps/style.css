@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+}
+
+@keyframes bar {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 40px;
+  }
+}
+
+/* @keyframes barForwards {
+
+  0% {
+    background: linear-gradient(to right, #4b8bd3 0%, #d3d3df 100%);
+  }
+
+  10% {
+    background: linear-gradient(to right, #4b8bd3 10%, #d3d3df 90%);
+  }
+
+  20% {
+    background: linear-gradient(to right, #4b8bd3 20%, #d3d3df 80%);
+  }
+
+  30% {
+    background: linear-gradient(to right, #4b8bd3 30%, #d3d3df 70%);
+  }
+
+  40% {
+    background: linear-gradient(to right, #4b8bd3 40%, #d3d3df 60%);
+  }
+
+  50% {
+    background: linear-gradient(to right, #4b8bd3 50%, #d3d3df 50%);
+  }
+
+  60% {
+    background: linear-gradient(to right, #4b8bd3 60%, #d3d3df 40%);
+  }
+
+  70% {
+    background: linear-gradient(to right, #4b8bd3 70%, #d3d3df 30%);
+  }
+
+  80% {
+    background: linear-gradient(to right, #4b8bd3 80%, #d3d3df 20%);
+  }
+
+  90% {
+    background: linear-gradient(to right, #4b8bd3 90%, #d3d3df 10%);
+  }
+
+  100% {
+    background: linear-gradient(to right, #4b8bd3 100%, #d3d3df 0%);
+  }
+
+}
+*/
+
+.progress {
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.number {
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  display: flex;
+  background-color: #fff;
+  border: 2px solid #d3d3df;
+  border-radius: 30px;
+  justify-content: center;
+  margin: 10px 0;
+  transition: all .5s;
+}
+
+.progress-bar {
+  width: 0;
+  height: 2px;
+  background-color: #4b8bd3;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  transition: width .5s;
+  z-index: -1;
+}
+
+.progress::before {
+  content: "";
+  width: 180px;
+  height: 2px;
+  background-color: #d3d3df;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.active {
+  border-color: #4b8bd3;
+}
+
+.btn,
+.btn:active {
+  width: 80px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  margin: 5px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn-prev {
+  background-color: #4b8bd3;
+}
+
+.btn-next {
+  background-color: #d3d3df;
+}
