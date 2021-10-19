@@ -4,12 +4,144 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-color: #000;
+  --secondary-color: #fff;
+}
+
+html {
+  background-color: white;
+  color: black;
+  transition: all .5s ease-in;
+}
+
+html.dark {
+  --primary-color: #fff;
+  --secondary-color: #333;
+}
+
+html.dark {
+  background-color: #111;
+  color: var(--primary-color);
+}
+
 body {
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   height: 100vh;
   overflow: hidden;
   margin: 0;
+  padding-top: 10vh;
+  padding-bottom: 40vh;
+}
+
+.mode {
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: 0;
+  border-radius: 4px;
+  padding: 8px 12px;
+}
+
+.mode:focus {
+  outline: none;
+}
+
+.analog-clock {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  margin-top: 5rem;
+}
+
+.container {
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  background-color: black;
+  position: relative;
+}
+
+.pin {
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  background-color: var(--primary-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.pin::before {
+  content: "";
+  width: 3px;
+  height: 3px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: red;
+}
+
+.hand {
+  width: 2px;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform-origin: bottom center;
+  background-color: var(--primary-color);
+}
+
+.hour-hand {
+  height: 40px;
+  background-color: var(--primary-color);
+}
+
+.minute-hand {
+  height: 70px;
+  background-color: var(--primary-color);
+}
+
+.second-hand {
+  height: 70px;
+  background-color: red;
+}
+
+/* #second {
+  background-color: red;
+} */
+
+.digital-clock {
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem;
+}
+
+.date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+}
+
+.day {
+  width: 16px;
+  height: 16px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-size: 12px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin-left: .5rem;
 }

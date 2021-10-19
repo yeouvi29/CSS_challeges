@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        background-color: dimgray;
+      }
+
+      /* table,
+      th,
+      td {
+        border: 2px solid #ffffff;
+        color: #ffffff;
+      } */
+
+      h3 {
+        margin: 0;
+      }
+
+      table {
+        border-collapse: collapse;
+        margin: 5px;
+        margin-top: 20px;
+      }
+
+      th,
+      td {
+        width: 100px;
+        background-color: transparent;
+        padding: 3px;
+      }
+
+      th {
+        text-align: left;
+      }
+
+      td {
+        text-align: center;
+      }
+
+      .pass {
+        background-color: #45a92d;
+      }
+
+      .fail {
+        background-color: #d35e4e;
+      }
+
+      .blocked {
+        background-color: #ea5d1b;
+      }
+
+      .na {
+        background-color: #6b6a5f;
+      }
+
+      .title {
+        background-color: #1c3a0a;
+      }
+
+      .total {
+        background-color: #c1c4b6;
+      }
+
+      .total-num {
+        color: #000;
+      }
+
+      .white {
+        color: #fff;
+      }
+      .table,
+      .table th,
+      .table td {
+        border: 2px solid #ffffff;
+      }
+      .table-2 th,
+      .table-2 td {
+        width: 125px;
+      }
+
+      .no-border {
+        border: none;
+        color: #000;
+      }
+
+      .ps5 {
+        font-size: 1.2rem;
+      }
+
+      .center {
+        text-align: center;
+      }
+
+      .table-2 .tb-2-th {
+        width: 180px;
+      }
+
+      #total {
+        color: #000;
+      }
+
+      body .red.blue {
+        color: yellow;
+      }
+      .red.blue {
+        color: green;
+      }
+      .red {
+        color: red;
+      }
+
+      .blue {
+        color: blue;
+      }
+      body > .red {
+        color: black;
+      }
+    </style>
+    <title>Table</title>
+  </head>
+  <body>
+    <h3>
+      Smoke Test Summary - XSX - NOT SAFE - 09.15.2021 CL 274452(1.14001.2603)
+    </h3>
+    <h3>Status: <span style="color: red">NOT SAFE</span></h3>
+    <h3>
+      XSX LKG Link: <span><a href="#">XSX LKG</a></span>
+    </h3>
+
+    <table class="table table-1 white">
+      <tr>
+        <td></td>
+        <th scope="col" class="pass">Pass</th>
+        <th scope="col" class="fail">Fail</th>
+        <th scope="col" class="blocked">Blocked</th>
+        <th scope="col" class="na">N/A Skipped</th>
+      </tr>
+      <tr>
+        <th scope="row" class="title">General</th>
+        <td>116</td>
+        <td>3</td>
+        <td>16</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <th scope="row" class="title">Habitat</th>
+        <td>116</td>
+        <td>3</td>
+        <td>16</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <th scope="row" class="title">Snowcat</th>
+        <td>116</td>
+        <td>3</td>
+        <td>16</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <th scope="row" class="title">Hanger</th>
+        <td>116</td>
+        <td>3</td>
+        <td>16</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <th scope="row" class="title">Tunnels</th>
+        <td>116</td>
+        <td>3</td>
+        <td>16</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <th scope="row" class="title">Minetown</th>
+        <td>116</td>
+        <td>3</td>
+        <td>16</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <th scope="row" class="title">Tower</th>
+        <td>116</td>
+        <td>3</td>
+        <td>16</td>
+        <td>5</td>
+      </tr>
+      <tr class="total">
+        <th scope="row" id="total">Total</th>
+        <td class="total-num">116</td>
+        <td class="total-num">3</td>
+        <td class="total-num">16</td>
+        <td class="total-num">5</td>
+      </tr>
+    </table>
+
+    <table class="table table-2">
+      <tr class="tb-2 total">
+        <th scope="col" class="tb-2-th ps5 no-border">PS5</th>
+        <th scope="col" class="total center no-border">Total</th>
+        <th scope="col" class="total center no-border">Last 30</th>
+        <th scope="col" class="total center no-border">Last 7</th>
+      </tr>
+      <tr>
+        <th scope="row" class="tb-2-th fail">Fail</th>
+        <td>139</td>
+        <td>6</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <th scope="row" class="tb-2-th pass">Pass</th>
+        <td>86</td>
+        <td>22</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <th scope="row" class="tb-2-th na">Pass Rate</th>
+        <td>38%</td>
+        <td>79%</td>
+        <td>67%</td>
+      </tr>
+      <tr>
+        <th scope="col" class="tb-2-th total no-border">Days Since Last LKG</th>
+        <th scope="col" class="total no-border">Last LKG</th>
+        <th scope="col" colspan="2" class="total no-border center">CL#</th>
+      </tr>
+      <tr>
+        <th scope="row" class="tb-2-th title center">0</th>
+        <td>Wed Sep-15</td>
+        <td colspan="2">1.12001.2603.274452</td>
+      </tr>
+    </table>
+
+    <table class="table table-3">
+      <tr>
+        <td></td>
+        <th scope="col" class="pass">Chapter Smokes - PS5</th>
+        <th scope="col" class="fail">Fail</th>
+        <th scope="col" class="blocked">Blocked</th>
+        <th scope="col" class="na">N/A Skipped</th>
+      </tr>
+      <tr>
+        <th scope="row" class="title">General</th>
+        <td>116</td>
+        <td>3</td>
+        <td>16</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <th scope="row" class="title">Habitat</th>
+        <td>116</td>
+        <td>3</td>
+        <td>16</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <th scope="row" class="title">Snowcat</th>
+        <td>116</td>
+        <td>3</td>
+        <td>16</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <th scope="row" class="title">Hanger</th>
+        <td>116</td>
+        <td>3</td>
+        <td>16</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <th scope="row" class="title">Tunnels</th>
+        <td>116</td>
+        <td>3</td>
+        <td>16</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <th scope="row" class="title">Minetown</th>
+        <td>116</td>
+        <td>3</td>
+        <td>16</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <th scope="row" class="title">Tower</th>
+        <td>116</td>
+        <td>3</td>
+        <td>16</td>
+        <td>5</td>
+      </tr>
+      <tr class="total">
+        <th scope="row" id="total">Total</th>
+        <td class="total-num">116</td>
+        <td class="total-num">3</td>
+        <td class="total-num">16</td>
+        <td class="total-num">5</td>
+      </tr>
+    </table>
+    <p class="red blue">test</p>
+  </body>
+</html>

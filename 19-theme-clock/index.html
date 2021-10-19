@@ -10,10 +10,22 @@
       referrerpolicy="no-referrer"
     /> -->
     <link rel="stylesheet" href="style.css" />
-    <title>My Project</title>
+    <title>Theme Clock</title>
   </head>
   <body>
-    <h1>Project Starter</h1>
-    <script src="script.js"></script>
+    <button class="mode">Dark mode</button>
+    <div>
+      <div class="analog-clock">
+        <div class="container">
+          <div class="second-hand hand" id="second"></div>
+          <div class="minute-hand hand"></div>
+          <div class="hour-hand hand"></div>
+          <div class="pin"></div>
+        </div>
+      </div>
+      <div class="digital-clock"></div>
+      <div class="date" id="date"></div>
+    </div>
+    <script src="./script.js"></script>
   </body>
 </html>

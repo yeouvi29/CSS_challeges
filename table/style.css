@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  background-color: dimgray;
+}
+
+table,
+th,
+td {
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+h3 {
+  margin: 0;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 5px;
+  margin-top: 20px;
+}
+
+th,
+td {
+  width: 100px;
+  background-color: transparent;
+  padding: 3px;
+}
+
+th {
+  text-align: left;
+}
+
+td {
+  text-align: center;
+}
+
+.pass {
+  background-color: #45A92D;
+}
+
+.fail {
+  background-color: #D35E4E;
+  ;
+}
+
+.blocked {
+  background-color: #EA5D1B;
+}
+
+.na {
+  background-color: #6B6A5F;
+}
+
+.title {
+  background-color: #1C3A0A;
+}
+
+.total {
+  background-color: #c1c4b6;
+}
+
+.total-num {
+  color: #000;
+}
+
+.table-2 th,
+.table-2 td {
+  width: 120px;
+}
+
+#total {
+  color: #000;
+}
